@@ -1,0 +1,106 @@
+.my-app__calendar {
+  &__event-viewer {
+    &-container {
+
+      &-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-alternate {
+          height: 90vh;
+
+          @media only screen and (max-width: 550px) {
+            height: 58vh;
+          }
+        }
+      }
+
+      &-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      &-title {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      &-events {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        max-height: 15rem;
+        overflow-y: auto;
+
+        &-alternate {
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
+          overflow-y: auto;
+        }
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.5rem;
+      }
+    }
+
+    &-item-wrapper {
+      display: flex;
+      padding-bottom: 2rem;
+    }
+
+    &-bullet {
+      display: flex;
+      width: 10px;
+      height: 10px;
+      border: 1px solid white;
+      border-radius: 6px;
+
+      &-wrapper {
+        display: flex;
+        padding-top: .6rem;
+      }
+    }
+
+    &-button {
+      display: flex;
+      font-size: 20px;
+      color: white;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    &-text {
+      &-title {
+        font-size: 24px;
+        font-weight: 300;
+      }
+
+      &-date {
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      &-event {
+        &-title {
+          font-size: 14px;
+          font-weight: bold;
+        }
+        &-location {
+          font-size: 11px;
+        }
+        &-timing {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

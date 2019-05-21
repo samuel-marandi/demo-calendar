@@ -1,0 +1,14 @@
+.my-app__calendar {
+  &__day-view {
+    &-container {
+      margin-top: 4rem;
+    }
+
+    &-week-day {
+      color: grey;
+      font-size: 20px;
+      padding: 0 10px;
+      font-weight: 900;
+    }
+  }
+}

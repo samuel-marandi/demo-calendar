@@ -1,0 +1,39 @@
+{
+  "env": {
+    "production": {
+      "plugins": [
+        "babel-plugin-webpack-alias",
+        [
+          "@babel/plugin-proposal-decorators",
+          {
+            "legacy": true
+          }
+        ],
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-syntax-dynamic-import",
+        "transform-async-to-generator"
+      ],
+      "presets": [["@babel/env",{
+        "modules": false
+      }], "@babel/react"]
+    },
+    "test":{
+      "presets": ["@babel/env", "@babel/react"],
+      "plugins": ["@babel/plugin-syntax-dynamic-import", "@babel/plugin-proposal-class-properties"]
+    },
+    "development": {
+      "plugins": [
+        "babel-plugin-webpack-alias",
+        [
+          "@babel/plugin-proposal-decorators",
+          {
+            "legacy": true
+          }
+        ],
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-syntax-dynamic-import"
+      ],
+      "presets": ["@babel/env","@babel/react"]
+    }
+  }
+}

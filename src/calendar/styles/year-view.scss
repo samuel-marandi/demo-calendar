@@ -1,0 +1,29 @@
+.my-app__calendar {
+  &__year-view {
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-top: 3rem;
+      padding: 0 6%;
+    }
+
+    &-button {
+      display: flex;
+      flex: 1;
+      height: 11rem;
+      color: grey;
+      font-size: 2rem;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 3px 5px rgba(0, 10, 35, 0.35);
+
+      &-wrapper {
+        display: flex;
+        flex: 1 1 33%;
+        //border: 1px solid;
+      }
+    }
+  }
+}
